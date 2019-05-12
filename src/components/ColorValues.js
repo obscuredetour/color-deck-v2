@@ -3,7 +3,7 @@ import React from "react"
 function ColorValues() {
   return (
     <div className='color-values'>
-      <div class="color-values__header">
+      <div className="color-values__header">
         <p className="_title">Color Values</p>
       </div>
       <div className="copy-block">
