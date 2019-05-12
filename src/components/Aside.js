@@ -2,8 +2,6 @@ import React from "react";
 
 import logo from '../images/icons/icon-192x192.png';
 import icon_info from '../images/icon-info.svg';
-// import "../js/iro.min.js";
-// console.log(github_logo);
 
 function Aside() {
   return (
@@ -41,24 +39,24 @@ function Aside() {
 }
 
 // App functions
-const getStartColor = () => {
-  const letters = '0123456789ABCDEF';
-  let color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-};
+// const getStartColor = () => {
+//   const letters = '0123456789ABCDEF';
+//   let color = '#';
+//   for (var i = 0; i < 6; i++) {
+//     color += letters[Math.floor(Math.random() * 16)];
+//   }
+//   return color;
+// };
 
-const showTooltip = async (el) => {
-  // pass in tooltip element
-  // 'show' tooltip via class
-  el.classList.toggle('visible');
-  // wait 1 second and remove visible class
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-  await delay(1000);
-  el.classList.toggle('visible');
-};
+// const showTooltip = async (el) => {
+//   // pass in tooltip element
+//   // 'show' tooltip via class
+//   el.classList.toggle('visible');
+//   // wait 1 second and remove visible class
+//   const delay = ms => new Promise(res => setTimeout(res, ms));
+//   await delay(1000);
+//   el.classList.toggle('visible');
+// };
 
 // Create and Display Color Wheel
 // let colorWheel = new iro.ColorPicker("#color-wheel", {

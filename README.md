@@ -1,6 +1,6 @@
 <p align="left">
   <a href="https://color.obscuredetour.com/">
-    <img width=580 src="https://github.com/obscuredetour/color-deck/raw/master/build/images/color-deck-logo-full.svg">
+    <img width=580 src="./src/images/color-deck-logo-full.svg">
   </a>
   <br>
   <a href="https://github.com/obscuredetour/color-deck/">
@@ -15,11 +15,13 @@
 </p>
 
 # Color Deck v2
-Color is being rewritten using React.
+Color Deck is being rewritten using React.
 
 ---
 For current version see below.
+
 https://github.com/obscuredetour/color-deck/
+
 https://color.obscuredetour.com/
 
 Color Deck is a HSL driven color palette collector [progressive web app](https://developers.google.com/web/progressive-web-apps/) made for humans.

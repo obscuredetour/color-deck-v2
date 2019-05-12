@@ -1,13 +1,8 @@
 import React from "react"
 
-// import '../scss/Header.scss';
-
-
 import icon_github from '../images/icon-github.svg';
 import icon_help from '../images/icon-help.svg';
 import icon_info from '../images/icon-info.svg';
-
-// console.log(github_logo);
 
 function Header() {
   return (
