@@ -1,0 +1,153 @@
+//helpers
+._title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: $pearl;
+  margin: 12px 0 8px;
+}
+
+//text colors
+._heather {
+  color: $heather;
+}
+._sky {
+  color: $sky;
+}
+
+// negative margins
+._mt1, ._mt1:first-of-type { margin-top: -1rem }
+._mt2, ._mt2:first-of-type { margin-top: -2rem }
+._mthalf, ._mthalf:first-of-type { margin-top: -0.5rem }
+
+
+//--------- reuseables -------//
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  > * {
+    flex: 1 1 100%;
+    margin: 0 0 1rem 0;
+    &:last-child{ margin-bottom: 0 }
+  }
+  &.alt { flex-direction: row; }
+}
+
+@media screen and (min-width: 769px){
+  .flex-container {
+    flex-direction: row;
+    > * {
+      margin-right: 1rem;
+      margin-bottom: 0;
+      &:last-child{ margin-right: 0 }
+    }
+    &.alt {
+      flex-direction: column;
+      > * { margin-right: 0; }
+    }
+  }
+}
+
+// buttons
+.button-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $alto;
+  background: $stone;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10rem;
+  font-size: 1rem;
+  margin: 0 0.125rem;
+  padding: 0.3125rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  z-index: 9;
+  &:hover {
+    color: $alto;
+    background: $indigo;
+  }
+  &.-clear { padding: 0.5rem }
+  &.-copy {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 100%;
+    // border-top-left-radius: 0;
+    // border-bottom-left-radius: 0;
+    &.-sm {
+      right: unset;
+      left: -1px;
+    }
+  }
+  &.-save {
+    height: 100%;
+    width: 2.5rem;
+    right: -1px;
+    bottom: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 16px;
+  }
+  &.-saved {
+    padding: 8px;
+    width: 100%;
+    margin: 0;
+    font-weight: 500;
+    color: $alto;
+    background: transparentize($jet, 0.6);
+    &:hover,
+    &:active,
+    &:focus {
+      background: transparentize($jet, 0.4)
+    }
+    &.-hsl, &.-hex, &.-rgb {
+      font-size: 0.875rem;
+      border-radius: 0;
+    }
+    &.-hsl {
+      border-radius: 0;
+      border-bottom-left-radius: 8px;
+    }
+    &.-rgb {
+      border-radius: 0;
+      border-bottom-right-radius: 8px;
+    }
+    &.-clear {
+      position: absolute;
+      right: 0;
+      width: 44px;
+      padding-right: 0.25rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  > .graphic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+//span svg
+.graphic {
+  > .icon {
+    width: 16px;
+    & path { fill: $alto; }
+    &.-plus {
+      width: 28px;
+      height: 28px;
+      &.-clear { transform: rotate(45deg) }
+    }
+  }
+}

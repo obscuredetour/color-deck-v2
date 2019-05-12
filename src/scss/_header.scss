@@ -1,0 +1,68 @@
+@import '_variables';
+
+//--------- header -------//
+.header-wrapper {
+  width: 100%;
+  min-height: 5rem;
+  background: $space;
+  display: flex;
+  align-items: center;
+  grid-area: 1 / 2 / 2 / -1;
+  border-bottom: 5px solid $jet;
+}
+
+.color-form {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+
+  > .color-input {
+    margin: 0;
+  }
+}
+
+.header-content {
+  width: 100%;
+  max-width: 980px;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  > .link, .link:visited {
+    color: $alto;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    border-radius: 30px;
+    &:hover, &:active, &:focus {
+      opacity: 0.75;
+    }
+    &.-active {
+      > img { filter: brightness(150%) }
+    }
+  }
+  @media screen and (min-width: 569px) {
+    padding: 0 2.25rem 0 1.5rem;
+    > .link { margin-left: 1.5rem }
+  }
+}
+
+.github {
+  // position: absolute;
+  // right: 0.5rem;
+  display: flex;
+  align-items: center;
+  > .star { display: none }
+  > .link {
+    padding: 0;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+    > img { max-width: 32px }
+    &:hover { opacity: 1 }
+  }
+  @media screen and (min-width: 569px) {
+    right: 1rem;
+    > .star { display: block }
+    > .link { margin-right: 12px }
+  }
+}
