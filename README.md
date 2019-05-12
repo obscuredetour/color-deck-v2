@@ -1,6 +1,6 @@
 <p align="left">
   <a href="https://color.obscuredetour.com/">
-    <img width=580 src="build/images/color-deck-logo-full.svg">
+    <img width=580 src="https://github.com/obscuredetour/color-deck/raw/master/build/images/color-deck-logo-full.svg">
   </a>
   <br>
   <a href="https://github.com/obscuredetour/color-deck/">
