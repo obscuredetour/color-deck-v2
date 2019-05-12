@@ -8,6 +8,10 @@
 //   }
 // }
 
+.iro__slider {
+  display: none !important;
+}
+
 .side-bar {
   background-color: $jet;
   grid-area: 1 / 1 / -1 / 1;
@@ -20,13 +24,9 @@
 }
 
 .color-wheel {
-  background-color: #ccc;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 205px;
-  height: 205px;
-  padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 10rem
 }

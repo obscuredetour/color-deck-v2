@@ -11,7 +11,7 @@ function ColorControls() {
           <div className="range-controls">
             <p className="_title">Hue <span className="h-value value"></span></p>
             <div className="slider-controls">
-              <input id="h-slider" name="h-slider" type="range" min="0" max="360" value="50" className="slider h-slider -hue" />
+              <input id="h-slider" name="h-slider" type="range" min="0" max="360" defaultValue="50" className="slider h-slider -hue" />
             </div>
           </div>
         </div>
@@ -20,7 +20,7 @@ function ColorControls() {
           <div className="range-controls">
             <p className="_title">Saturation <span className="s-value value"></span></p>
             <div className="slider-controls -saturation">
-              <input id="s-slider" name="s-slider" type="range" min="0" max="100" value="50" className="slider s-slider -saturation" />
+              <input id="s-slider" name="s-slider" type="range" min="0" max="100" defaultValue="50" className="slider s-slider -saturation" />
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ function ColorControls() {
           <div className="range-controls">
             <p className="_title">Lightness <span className="l-value value"></span></p>
             <div className="slider-controls -lightness">
-              <input id="l-slider" name="l-slider" type="range" min="0" max="100" value="50" className="slider l-slider -lightness" />
+              <input id="l-slider" name="l-slider" type="range" min="0" max="100" defaultValue="50" className="slider l-slider -lightness" />
             </div>
           </div>
         </div>
