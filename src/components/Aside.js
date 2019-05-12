@@ -38,15 +38,7 @@ function Aside() {
   )
 }
 
-// App functions
-// const getStartColor = () => {
-//   const letters = '0123456789ABCDEF';
-//   let color = '#';
-//   for (var i = 0; i < 6; i++) {
-//     color += letters[Math.floor(Math.random() * 16)];
-//   }
-//   return color;
-// };
+
 
 // const showTooltip = async (el) => {
 //   // pass in tooltip element
@@ -58,23 +50,8 @@ function Aside() {
 //   el.classList.toggle('visible');
 // };
 
-// Create and Display Color Wheel
-// let colorWheel = new iro.ColorPicker("#color-wheel", {
-//   width: 285,
-//   height: 285,
-//   color: getStartColor(),
-//   markerRadius: 8,
-//   padding: 4,
-//   sliderMargin: 24,
-//   sliderHeight: 36,
-//   borderWidth: 3,
-//   borderColor: "#1d1d1d",
-//   anticlockwise: true,
-//   css: {
-//     "#swatch, .swatch-sm, .slider, .slider-controls.-saturation, .slider-controls.-lightness": {
-//       "background-color": "$color"
-//     }
-//   }
-// });
+
+
+// export {colorWheel};
 
 export default Aside;
